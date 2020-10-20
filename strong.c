@@ -1,10 +1,10 @@
 //strong number!
+//Strong number is a number whose sum of all digits' factorial is equal to the number 'n'. ... So, to find a number whether its strong number, we have to pick every digit of the number like the number is 145 then we have to pick 1, 4 and 5 now we will find factorial of each number i.e, 1! = 1, 4! = 24, 5! = 120.Oct 18, 2019
 
 #include<stdio.h>
 int main()
 {
-    int n;
-    int i,j;
+    int i,j,n;
     int d;
     int fact=1;
     int sum=0;
