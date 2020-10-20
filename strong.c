@@ -15,6 +15,13 @@ int main()
         printf("Invalid Input");
         return 0;
     }
+
+    // Since a Strong number can't be an Even number
+    if (n%2 == 0) {
+      printf("%d No. not Strong\n",n);
+      return 0;
+    }
+
     int temp =n;
     while (n!=0)
     {
