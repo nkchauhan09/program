@@ -7,73 +7,38 @@ int main()
     printf("Enter N:");
     scanf("%d",&n);
 
+    const char *words[10];
+    words[0] = " Zero";
+    words[1] = " One";
+    words[2] = " Two";
+    words[3] = " Three";
+    words[4] = " Four";
+    words[5] = " Five";
+    words[6] = " Six";
+    words[7] = " Seven";
+    words[8] = " Eight";
+    words[9] = " Nine";
+
+    int len = 0;
+
     while (n!=0)
     {
         d=n%10;
         s=s*10+d;
         n=n/10;
+        len++;
     }
     
-    while(s!=0)
+    while(len)
     {
         d=s%10;
+
+        printf("%s", words[d]);
         
-        if(d==0)
-        {
-            printf(" Zero");
-        }
-        else if (d==1)
-        {
-             printf(" One");
-        }
-            
-        else if (d==2)
-        {
-             printf(" Two");
-        }
-        
-        
-        else if (d==3)
-        {
-             printf(" Three");
-        }
-        
-        
-        else if (d==4)
-        {
-             printf(" Four");
-        }
-        
-        
-        else if (d==5)
-        {
-             printf(" Five");
-        }
-            
-        else if (d==6)
-        {
-             printf(" Six");
-        }
-            
-        else if (d==7)
-        {
-             printf(" Seven");
-        }
-    
-        else if (d==8)
-        {
-             printf(" Eight");
-        }
-        
-        else if (d==9)
-        {
-             printf(" Nine");
-        }
         s=s/10;
         
-        
-        
+        len--;
     }
-    printf("/n");
+    printf("\n");
     
 }
